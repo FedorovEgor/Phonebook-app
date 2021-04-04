@@ -26,7 +26,7 @@ Here are some samples of REST methods calls:
     
    - GET http method http://localhost:5000/api/v1/users to get a list of all users as a Json.
       You'll get 200 OK respone if there are users in the list or 404 NOT FOUND if there are none.
-   - GET http method http://localhost:5000/api/v1/users/userId to get a single user if it exists.
+   - GET http method http://localhost:5000/api/v1/users/{userId} to get a single user if it exists.
       You'll get 200 OK response if there is a user with such ID or 404 NOT FOUND if user doesn't exist.
    - PUT http method http://localhost:5000/api/v1/users/userId to update existing user. It will also require Json body as a parameter.
       You'll get 200 OK response if user successfully updated or 304 NOT MODIFIED if something went wrong during updating proccess or if there is no user with this ID.
